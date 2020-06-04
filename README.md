@@ -52,7 +52,7 @@ Nous savons que la cible s’est hébergée à l’hôtel « Black Rain » et qu
 ---
 > **_Question :_** Quel est le nom du constructeur de l’interface sans fils de la cible ?
 > 
-> **_Réponse :_** `SamsungE_22:49:74`
+> **_Réponse :_** Samsung 
 
 ---
 > **_Question :_** Quel autres endroits la cible a-t-elle probablement visités ?
@@ -108,8 +108,6 @@ Maintenant que vous avez la clé WEP, configurez la dans Wireshark afin de déch
 ---
 > **_Montrer une capture d'écran de l'obtention de la clé WEP_**
 >
-> **_Capture ici_** 
->
 > <img src="images/Capture du 2020-06-04 17-15-00.png" style="zoom:67%;" />
 
 ---
@@ -117,7 +115,7 @@ Maintenant que vous avez la clé WEP, configurez la dans Wireshark afin de déch
 >
 > **_Réponse :_** Oui, on clique sur Editer -> Trouver un paquet 
 >
-> On cherche ensuite la string “credentials” dans détail du paquet et on trouve : **admin:admin** 
+> On cherche ensuite la string “credentials” dans détail du paquet et on trouve : **admin:admin** . 
 
 ---
 
@@ -144,9 +142,13 @@ Nous utiliserons Wireshark pour trouver l’authentification WPA contenue dans l
 
 > **_Fournir une capture d'écran des chiffres aléatoires_**
 >
-> **_Capture ici_** 
+> On a les deux valeurs suivantes:
 >
-> <img src="images/Capture du 2020-06-04 18-09-46.png" style="zoom:67%;" />
+> 60cb806f531978f2b6b18d1cad6855e592333764791225fa89ac74e60d12d971
+>
+> 72f64cc60d16d2c6f6e61c3ea6a3961f2a9651324918d26f709c48a0e00c51d3
+>
+> ![](images/img3.png)
 
 ---
 
@@ -173,8 +175,6 @@ aircrack-ng <nom-du-fichier-capture> -w <nom-du-dictionnaire>
 ---
 > **_Montrer une capture d'écran de l'obtention de la passphrase WPA_**
 >
-> **_Capture ici_** 
->
 > <img src="/home/gaetan/ownCloud/HEIG-VD/Semestre4/SRX/Labos/Teaching-HEIGVD-SRX-2020-Laboratoire-WiFi/images/Capture du 2020-06-04 18-20-45.png" style="zoom:67%;" />
 
 ---
@@ -182,9 +182,9 @@ aircrack-ng <nom-du-fichier-capture> -w <nom-du-dictionnaire>
 
 > **_Réponse :_** 
 > 
-> Adresse IP du serveur : ? 31.13.64.35
+> Adresse IP du serveur :  31.13.64.35
 > 
->Nom de Domaine : ? https://www.facebook.com/
+>Nom de Domaine :  https://www.facebook.com/
 
 
 
@@ -196,9 +196,9 @@ Nous avons enlevé une seule trame (choisie stratégiquement) du fichier de capt
 
 > **_Question :_** Est-ce que vous arrivez à refaire l'exercice ? Pourquoi ou pourquoi pas ?
 > 
-> **_Réponse :_** Cela ne fonctionne pas car le handshake WPA n’est pas complet on a donc pas accès à tous les nonces afin de déduire la passphrase 
+> **_Réponse :_** Cela ne fonctionne pas car le handshake WPA n’est pas complet on a donc pas accès à tous les nonces afin de déduire la passphrase. 
 
 ---
 > **_Question :_** Sur la base de votre réponse précédente, arrivez-vous à déduire quelle trame a été effacée ?
 
-> **_Réponse :_** Il manque le 2 ème message de l’authentification WPA 
+> **_Réponse :_** Il manque le 2 ème message de l’authentification WPA. 
