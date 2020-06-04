@@ -175,7 +175,7 @@ aircrack-ng <nom-du-fichier-capture> -w <nom-du-dictionnaire>
 ---
 > **_Montrer une capture d'écran de l'obtention de la passphrase WPA_**
 >
-> <img src="/home/gaetan/ownCloud/HEIG-VD/Semestre4/SRX/Labos/Teaching-HEIGVD-SRX-2020-Laboratoire-WiFi/images/Capture du 2020-06-04 18-20-45.png" style="zoom:67%;" />
+> <img src="images/Capture du 2020-06-04 18-20-45.png" style="zoom:67%;" />
 
 ---
 > **_Question :_** Lors de la capture, la cible a fait un « ping » sur un serveur. Arrivez-vous à dire de quel serveur il s’agit ?
